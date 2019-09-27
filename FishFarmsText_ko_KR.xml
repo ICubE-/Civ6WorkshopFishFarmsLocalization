@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<!--UI/Tooltip changes.-->
+	<LocalizedText>
+		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="ko_KR">
+			<Text>건설자의 어선 건설 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Food] 식량 +1을 제공합니다. 해안 또는 해양에 지어야 합니다.[NEWLINE][NEWLINE][ICON_RESOURCE_PEARLS] 진주 또는 [ICON_RESOURCE_WHALES] 고래 위에 지으면 도시가 해당 자원을 사용할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVIC_NAVAL_TRADITION_DESCRIPTION" Language="ko_KR">
+			<Text>이제 인접한 어선 시설 2개마다 [ICON_Food] 식량 +1.</Text>
+		</Replace>
+		<Replace Tag="LOC_TECH_CELESTIAL_NAVIGATION_DESCRIPTION" Language="ko_KR">
+			<Text>이제 인접한 어선 시설 2개마다 [ICON_Gold] 금 +1. 상인이 승선할 수 있게 되고, [ICON_RESOURCE_FISH] 물고기와 [ICON_RESOURCE_CRABS] 게를 수확할 수 있게 됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GOD_OF_THE_SEA_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_RESOURCE_FISH] 물고기, [ICON_RESOURCE_CRABS] 게, [ICON_RESOURCE_PEARLS] 진주, 또는 [ICON_RESOURCE_WHALES] 고래 위에 건설된 어선에서 [ICON_Production] 생산력 +1을 제공합니다.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

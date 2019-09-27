@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameInfo>
+	
+	<!--Allows fishing boats to be built on any coast or ocean tile.-->
+	<Improvement_ValidTerrains>
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" TerrainType="TERRAIN_COAST"/>
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" TerrainType="TERRAIN_OCEAN"/>
+	</Improvement_ValidTerrains>
+	
+	<!--Allows for fishing boats to gain adjacency benefits in a similar manner to farms, tying it to the Naval Tradition and Celestial Navigation techs.-->
+	<Improvement_Adjacencies>
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldChangeId="MAGIL_Boats_MedievalAdjacency"/>
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldChangeId="MAGIL_Boats_ClassicalAdjacency"/>
+	</Improvement_Adjacencies>
+	
+	<Adjacency_YieldChanges>
+		<Row ID="MAGIL_Boats_MedievalAdjacency" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="2" AdjacentImprovement="IMPROVEMENT_FISHING_BOATS" PrereqCivic="CIVIC_NAVAL_TRADITION" />
+		<Row ID="MAGIL_Boats_ClassicalAdjacency" Description="Placeholder" YieldType="YIELD_GOLD" YieldChange="1" TilesRequired="2" AdjacentImprovement="IMPROVEMENT_FISHING_BOATS" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+	</Adjacency_YieldChanges>
+	
+	<!--Adjusts the God of the Sea Pantheon to retain its original functionality.-->
+	<Modifiers>
+		<Update>
+			<Where ModifierId="GOD_OF_THE_SEA_FISHINGBOATS_PRODUCTION_MODIFIER"/>
+			<Set SubjectRequirementSetId="MAGIL_REQUIRES_FISHING_BOAT_AND_SEA_RESOURCE"/>
+		</Update>
+	</Modifiers>
+	
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>MAGIL_REQUIRES_FISHING_BOAT_AND_SEA_RESOURCE</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	
+	<Requirements>
+		<Row>
+			<RequirementId>MAGIL_REQUIRES_PLOT_HAS_TAG_SEA</RequirementId>
+			<RequirementType>REQUIREMENT_PLOT_RESOURCE_TAG_MATCHES</RequirementType>
+		</Row>
+	</Requirements>
+
+	<RequirementArguments>
+		<Row>
+			<RequirementId>MAGIL_REQUIRES_PLOT_HAS_TAG_SEA</RequirementId>
+			<Name>Tag</Name>
+			<Value>CLASS_SEA</Value>
+		</Row>
+	</RequirementArguments>
+	
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>MAGIL_REQUIRES_FISHING_BOAT_AND_SEA_RESOURCE</RequirementSetId>
+			<RequirementId>MAGIL_REQUIRES_PLOT_HAS_TAG_SEA</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>MAGIL_REQUIRES_FISHING_BOAT_AND_SEA_RESOURCE</RequirementSetId>
+			<RequirementId>REQUIRES_PLOT_HAS_FISHINGBOATS</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
+	
+	<Civics>
+		<Update>
+			<Where CivicType="CIVIC_NAVAL_TRADITION" />
+			<Set Description="LOC_CIVIC_NAVAL_TRADITION_DESCRIPTION" />
+		</Update>
+	</Civics>
+	
+</GameInfo>

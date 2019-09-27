@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<!--UI/Tooltip changes.-->
+	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 해상 유닛은 전투 경험치 +25%를 획득합니다. 이 도시의 모든 해안 타일에 [ICON_FOOD] 식량 +1을 제공합니다. [ICON_RESOURCE_FISH] 물고기와 [ICON_RESOURCE_CRABS] 게 자원은 [ICON_Food] 식량 +1을 제공합니다.</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="ko_KR">
+			<Text>+25% combat experience for all naval units trained in this city. Fishing boats worked by this city produce +1 [ICON_Gold] Gold, and Coast tiles provide an additional +2 [ICON_Gold] Gold.</Text>
+		</Replace>-->
+		<Replace Tag="LOC_DISTRICT_HARBOR_DESCRIPTION" Language="ko_KR">
+			<Text>해상활동용 특수지구입니다. 이 타일에서 승선 또는 하선할 경우 [ICON_Movement] 이동력 페널티가 없습니다. 육지에 인접한 해안 또는 호수 지형에 건설해야 합니다.[NEWLINE][NEWLINE]이 도시에 아직 상업 중심지 특수지구가 건설되지 않은 경우 [ICON_TradeRoute] 교역로 최대치 +1.[NEWLINE]이 도시에 상업 중심지 특수지구가 건설된 경우 [ICON_TradeRoute] 교역로에서 [ICON_Gold] +2.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION" Language="ko_KR">
+			<Text>영국 특유의 해상활동용 특수지구입니다. 항만 특수지구를 대체하며 건설 비용이 더 낮습니다. 이 타일에서 승선 또는 하선할 경우 [ICON_Movement] 이동력 페널티가 없습니다. 육지 옆 해안 또는 호수 지형에 지어야 합니다.[NEWLINE][NEWLINE]조선소에서 생성된 모든 해상 유닛에 [ICON_Movement] 이동력 +1.[NEWLINE]본 대륙이 아닌 경우 [ICON_Gold] 금 +2.[NEWLINE][ICON_TradeRoute] 교역로 최대치 +1.[NEWLINE]이 도시에 상업 중심지 특수지구가 건설된 경우 [ICON_TradeRoute] 교역로에서 [ICON_Gold] +2.</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_DISTRICT_GOLD_CITY_CENTER" Language="ko_KR">
+			<Text>+3 [ICON_Gold] Gold when adajcent to the City Center.</Text>
+		</Replace>-->
+		<Replace Tag="LOC_COAST_GOLD" Language="ko_KR">
+			<Text>인접한 해안 타일 2개당 [ICON_Gold] 금 +1.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>
